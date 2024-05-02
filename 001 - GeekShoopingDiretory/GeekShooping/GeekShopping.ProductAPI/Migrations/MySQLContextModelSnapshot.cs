@@ -61,6 +61,26 @@ namespace GeekShopping.ProductAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("product");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1L,
+                            CategoryName = "T-Shirt",
+                            Description = "Camiseta e boa dms zé",
+                            ImageURL = "https://github.com/leandrocgsi/erudio-microservices-dotnet6/blob/main/ShoppingImages/2_no_internet.jpg",
+                            Name = "Camisa",
+                            Price = 69.9m
+                        },
+                        new
+                        {
+                            Id = 2L,
+                            CategoryName = "T-Brusa",
+                            Description = "Brusa e boa dms zé",
+                            ImageURL = "https://github.com/leandrocgsi/erudio-microservices-dotnet6/blob/main/ShoppingImages/8_moletom_cobra_kay.jpg",
+                            Name = "Blusa Cobra Kai",
+                            Price = 89.9m
+                        });
                 });
 #pragma warning restore 612, 618
         }

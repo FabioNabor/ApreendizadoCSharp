@@ -32,7 +32,6 @@ F:\C# Apreendizado\ApreendizadoCSharp\001 - GeekShoopingDiretory\GeekShooping\Ge
 F:\C# Apreendizado\ApreendizadoCSharp\001 - GeekShoopingDiretory\GeekShooping\GeekShopping.ProductAPI\obj\Debug\net8.0\GeekShopping.ProductAPI.genruntimeconfig.cache
 F:\C# Apreendizado\ApreendizadoCSharp\001 - GeekShoopingDiretory\GeekShooping\GeekShopping.ProductAPI\obj\Debug\net8.0\ref\GeekShopping.ProductAPI.dll
 F:\C# Apreendizado\ApreendizadoCSharp\001 - GeekShoopingDiretory\GeekShooping\GeekShopping.ProductAPI\bin\Debug\net8.0\AutoMapper.dll
-F:\C# Apreendizado\ApreendizadoCSharp\001 - GeekShoopingDiretory\GeekShooping\GeekShopping.ProductAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 F:\C# Apreendizado\ApreendizadoCSharp\001 - GeekShoopingDiretory\GeekShooping\GeekShopping.ProductAPI\bin\Debug\net8.0\Azure.Core.dll
 F:\C# Apreendizado\ApreendizadoCSharp\001 - GeekShoopingDiretory\GeekShooping\GeekShopping.ProductAPI\bin\Debug\net8.0\Azure.Identity.dll
 F:\C# Apreendizado\ApreendizadoCSharp\001 - GeekShoopingDiretory\GeekShooping\GeekShopping.ProductAPI\bin\Debug\net8.0\Humanizer.dll

@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yP5tOBhmks7qJXDcy7xE5NYrmMEyvRwY5FIOTtIlYXFe+PNGgBIUexRPSifOQpfh4UZzmFbecEqKeeM6S5dnHA==",
+  "dgSpecHash": "AeEjiq+IT3S3o58XBoqBMVErbqVozWzFuXPWIzgcngAP5Wl8dINT7YDcRCB0Rqn2tdzfTdcFF4dREf1U+Vr93Q==",
   "success": true,
   "projectFilePath": "F:\\C# Apreendizado\\ApreendizadoCSharp\\001 - GeekShoopingDiretory\\GeekShooping\\GeekShopping.ProductAPI\\GeekShopping.ProductAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fábio Nabor\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
-    "C:\\Users\\Fábio Nabor\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Fábio Nabor\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Fábio Nabor\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Fábio Nabor\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -85,16 +84,5 @@
     "C:\\Users\\Fábio Nabor\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Fábio Nabor\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Versão detectada do pacote fora da restrição de dependência: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requer AutoMapper (= 12.0.1), mas a versão AutoMapper 13.0.1 foi resolvida.",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
