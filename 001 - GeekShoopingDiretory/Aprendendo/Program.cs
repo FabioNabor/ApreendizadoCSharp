@@ -1,26 +1,24 @@
 ﻿using Aprendendo.Models;
+using System.Text;
 
 namespace Aprendendo
 {
 	internal class Program
 	{
-		static void Main(string[] args)
+		static async Task Main(string[] args)
 		{
-			List<UserModel> users = new List<UserModel>();
-			users.Add(new UserModel("FABIO NABOR", "BCARD123"));
-			users.Add(new UserModel("JOESLENA F NABOR", "BCARD123"));
-			users.Add(new UserModel("FABIANA NABOR NABOR", "BCARD123"));
-			var conteudo = users.Where(x => x.UserName.Contains("F")).ToList();
+			Task<int> str = batata();
 
+			var r = await str;
 
-			int[][] ints = new int[3][];
+			Console.WriteLine(str);
+			Console.WriteLine("Oha");
 
-			Console.WriteLine(ints);
-
-
-			foreach (var user in conteudo)
+			static async Task<int> batata()
 			{
-				Console.WriteLine( user.ToString());
+				await Task.Delay(1000);
+
+				return 100+50;
 			}
 		}
 	}

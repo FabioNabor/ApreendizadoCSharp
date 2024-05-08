@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0VqVPzFImKS6g1tzKg6BagYW8isejLqENu/8UWRo61M=",
+  "Source": "FTorrent.API",
+  "BasePath": "_content/FTorrent.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
