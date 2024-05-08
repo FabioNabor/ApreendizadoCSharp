@@ -60,7 +60,7 @@ namespace FTorrent.API.Repositorio
 		public async Task<string> Login(LoginUser loginUser)
 		{
 			UserModel auser = await _db.Users.Where(x => x.Name == loginUser.UserName.ToLower() &&  x.Password == HashPassword.CodPassword(loginUser.Password)).FirstOrDefaultAsync() ?? new UserModel();
-			if (auser.Id <= 0) { throw new Exception("Credenciais (Usuario, Senha), Invalidos!"); }
+			if (auser.Id == null) { throw new Exception("Credenciais (Usuario, Senha), Invalidos!"); }
 			var token = GenToken.GeneretionToken(_mapper.Map<UserVO>(auser));
 			return token;
 		}
