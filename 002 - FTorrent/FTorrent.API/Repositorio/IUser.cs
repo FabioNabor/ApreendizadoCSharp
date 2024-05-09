@@ -9,6 +9,6 @@ namespace FTorrent.API.Repositorio
 		Task<UserVO> FindByName(string name);
 		Task<UserVO> CreateUser(UserVO user);
 		Task<UserVO> UpdateUser(UserVO user);
-		Task<string> Login(LoginUser login);
+		Task<ResultLogin> Login(LoginUser login);
 	}
 }

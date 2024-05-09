@@ -8,8 +8,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text;
 
 namespace FTorrent.API
@@ -46,7 +49,8 @@ namespace FTorrent.API
 						ValidateIssuerSigningKey = true,
 						ValidIssuer = "admin",
 						ValidAudience = "fabioOnabor",
-						IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"))
+						IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c")),
+						RoleClaimType = ClaimTypes.Role
 					};
 				});
 

@@ -6,9 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FTorrent.API.Controllers
 {
+	[Route("api/v1/Files")]
 	[Authorize]
-	[Route("api/v1/[controller]")]
-	[ApiController]
 	public class FileContoller : ControllerBase
 	{
 		private readonly IFile _filerp;

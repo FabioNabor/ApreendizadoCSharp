@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FTorrent.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f0458f0d0ce680a0aa96f5df0f7e46e44660261")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+360291b6dde3bfbac3fe55d18d6e8888cf9ab086")]
 [assembly: System.Reflection.AssemblyProductAttribute("FTorrent.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FTorrent.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
