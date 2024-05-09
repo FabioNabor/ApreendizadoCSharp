@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("FTorrent.API")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("FTorrent.WEB")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa83be024f2c12f4f012d9304ce377fe55b00168")]
-[assembly: System.Reflection.AssemblyProductAttribute("FTorrent.API")]
-[assembly: System.Reflection.AssemblyTitleAttribute("FTorrent.API")]
+[assembly: System.Reflection.AssemblyProductAttribute("FTorrent.WEB")]
+[assembly: System.Reflection.AssemblyTitleAttribute("FTorrent.WEB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

@@ -22,7 +22,16 @@ namespace FTorrent.WEB.Controllers
 			model.Password = "bcard123";
 			var response = await _lg.Login(model);
 
-			var mostrar = await _lg.MyFiles(response.token);
+			Response.Cookies.Append("jwt",  response.token ,new CookieOptions
+			{
+				HttpOnly = true,
+				Secure = true,
+				SameSite = SameSiteMode.None
+			});
+
+			var token = HttpContext.Response.Cookies["jwt"];
+
+			var mostrar = await _lg.MyFiles();
 
 			return View(mostrar);
 		}

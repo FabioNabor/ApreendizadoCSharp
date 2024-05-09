@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FTorrent.WEB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+360291b6dde3bfbac3fe55d18d6e8888cf9ab086")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa83be024f2c12f4f012d9304ce377fe55b00168")]
 [assembly: System.Reflection.AssemblyProductAttribute("FTorrent.WEB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FTorrent.WEB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
