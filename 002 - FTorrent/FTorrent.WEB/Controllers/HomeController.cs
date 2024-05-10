@@ -1,4 +1,5 @@
 using FTorrent.WEB.Models;
+using FTorrent.WEB.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,27 +7,34 @@ namespace FTorrent.WEB.Controllers
 {
 	public class HomeController : Controller
 	{
-		private readonly ILogger<HomeController> _logger;
+        private readonly ILoginService _lg;
 
-		public HomeController(ILogger<HomeController> logger)
+        public HomeController( ILoginService loginService)
 		{
-			_logger = logger;
+			_lg = loginService;
 		}
 
-		public IActionResult Index()
+		public async Task<IActionResult> Index()
 		{
-			return View();
+
+            return View();
 		}
 
-		public IActionResult Privacy()
+        [HttpPost]
+		public async Task<IActionResult> Login(string username, string password)
 		{
-			return View();
-		}
-
-		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-		public IActionResult Error()
-		{
-			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-		}
+            LoginUser model = new LoginUser();
+            model.UserName = username;
+            model.Password = password;
+            var response = await _lg.Login(model);
+            
+            if (response.token != null)
+            {
+                HttpContext.Response.Cookies.Append("jwt", response.token);
+                return RedirectToAction("Central", "Gerenciador");
+            }
+            TempData["UsuarioInvalido"] = "Credenciais (Usuário, Senha) invalidos!";
+            return View("Index");  
+        }
 	}
 }

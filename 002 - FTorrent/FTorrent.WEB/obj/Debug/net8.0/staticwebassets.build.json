@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AJj0fZhdXO1Fo52+QjXc4xNeSddrqypB7M5fQfwKoXc=",
+  "Hash": "jwbGsWbq+EElBFAfC8ts3GHhOaYpyiFF8BUMEr8hxQU=",
   "Source": "FTorrent.WEB",
   "BasePath": "_content/FTorrent.WEB",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\wwwroot\\img\\TRANSFER-removebg-preview.png",
+      "SourceId": "FTorrent.WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\wwwroot\\",
+      "BasePath": "_content/FTorrent.WEB",
+      "RelativePath": "img/TRANSFER-removebg-preview.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\TRANSFER-removebg-preview.png"
     },
     {
       "Identity": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\wwwroot\\js\\site.js",

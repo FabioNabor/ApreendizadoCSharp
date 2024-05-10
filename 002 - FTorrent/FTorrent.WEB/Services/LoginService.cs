@@ -21,14 +21,13 @@ namespace FTorrent.WEB.Services
 		{
 			var response = await _httpClient.GetAsync($"https://localhost:7116/api/v1/LHome/Login?UserName={loginModel.UserName}&Password={loginModel.Password}");
 
+			if (!response.IsSuccessStatusCode)
+			{
+				return new ResultLogin();			
+			}
+
 			return await response.ReadContentAs<ResultLogin>();
 		}
 
-		public async Task<IEnumerable<FileModel>> MyFiles(string token)
-		{
-			_httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-			var response = await _httpClient.GetAsync("https://localhost:7116/api/v1/Files/MeusFiles");
-			return await response.ReadContentAs<IEnumerable<FileModel>>();
-		}
 	}
 }

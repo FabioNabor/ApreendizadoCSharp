@@ -12,8 +12,12 @@ namespace FTorrent.WEB
 					c.BaseAddress = new Uri(builder.Configuration["ServicesUrls:FTorretAPI"])
 			);
 
-			// Add services to the container.
-			builder.Services.AddControllersWithViews();
+            builder.Services.AddHttpClient<IFileService, FileService>(c =>
+                    c.BaseAddress = new Uri(builder.Configuration["ServicesUrls:FTorretAPI"])
+            );
+
+            // Add services to the container.
+            builder.Services.AddControllersWithViews();
 
 			var app = builder.Build();
 

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\wwwroot\\img\\TRANSFER-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\TRANSFER-removebg-preview.png"
+    },
+    {
       "Id": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

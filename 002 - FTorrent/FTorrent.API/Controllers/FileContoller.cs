@@ -27,14 +27,14 @@ namespace FTorrent.API.Controllers
 			return Ok();
 		}
 
-		[HttpGet("Arquivo/{filename}")]
-		public async Task<ActionResult> DownloadFile(string filename)
+		[HttpGet("Arquivo")]
+		public async Task<ActionResult> DownloadFile([FromQuery]string filename)
 		{
 			var name = User.FindFirst("name")?.Value;
 			var file = await _filerp.FindFile(filename);
 
-			if (file.recebedor != name.ToLower())
-				return BadRequest("Esse arquivo não foi enviado a você, ou não te pertence!"); 
+			//if (file.recebedor != name.ToLower())
+				//return BadRequest("Esse arquivo não foi enviado a você, ou não te pertence!"); 
 			
 
 			var diretory = Path.Combine(Directory.GetCurrentDirectory(), file.diretory);
