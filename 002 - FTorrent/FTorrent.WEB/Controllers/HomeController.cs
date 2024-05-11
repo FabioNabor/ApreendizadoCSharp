@@ -16,7 +16,7 @@ namespace FTorrent.WEB.Controllers
 
 		public async Task<IActionResult> Index()
 		{
-
+            HttpContext.Response.Cookies.Delete("jwt");
             return View();
 		}
 

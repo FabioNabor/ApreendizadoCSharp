@@ -10,5 +10,6 @@ namespace FTorrent.API.Repositorio
 		Task<UserVO> CreateUser(UserVO user);
 		Task<UserVO> UpdateUser(UserVO user);
 		Task<ResultLogin> Login(LoginUser login);
+		Task<IEnumerable<NameUserVO>> ListUsers();
 	}
 }

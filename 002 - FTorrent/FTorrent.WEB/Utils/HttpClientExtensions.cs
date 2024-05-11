@@ -19,16 +19,7 @@ namespace FTorrent.WEB.Utils
 				new JsonSerializerOptions
 				{ PropertyNameCaseInsensitive = true });
 		}
-		public static Task<HttpResponseMessage> PostAsJson<T>(
-			this HttpClient httpclient,
-			string url,
-			T data)
-		{
-			var dataAsString = JsonSerializer.Serialize(data);
-			var content = new StringContent(dataAsString);
-			content.Headers.ContentType = contentType;
-			return httpclient.PostAsJson(url, content);
-		}
+
 
 	}
 }

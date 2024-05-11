@@ -20,3 +20,20 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.modal-dialog {
+    max-width: 400px;
+}
+
+.modal-content {
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Estilos para os inputs e botão */
+.form-control {
+    background-color: #555;
+    color: white;
+    border-color: #555;
+}

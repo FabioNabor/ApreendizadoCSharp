@@ -5,7 +5,6 @@ using FTorrent.API.Service;
 using FTorrent.API.ViewModel;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace FTorrent.API.Repositorio
 {
     public class UserRepository : IUser
@@ -25,6 +24,7 @@ namespace FTorrent.API.Repositorio
 			UserModel userd = await _db.Users.FirstOrDefaultAsync(x => x.Name == user.Name.ToLower()) ?? new UserModel();
 			if (userd.Id != null) { throw new Exception("Nome informado já existe em nossa base, use outro!"); }
 
+			user.NameCompleto = user.NameCompleto;
 			user.Password = HashPassword.CodPassword(user.Password);
 			user.Name = user.Name.ToLower();
 
@@ -59,7 +59,8 @@ namespace FTorrent.API.Repositorio
 
 		public async Task<ResultLogin> Login(LoginUser loginUser)
 		{
-			UserModel auser = await _db.Users.Where(x => x.Name == loginUser.UserName.ToLower() &&  x.Password == HashPassword.CodPassword(loginUser.Password)).FirstOrDefaultAsync() ?? new UserModel();
+			var codsenha = HashPassword.CodPassword(loginUser.Password);
+			UserModel auser = await _db.Users.Where(x => x.Name == loginUser.UserName &&  x.Password == codsenha).FirstOrDefaultAsync() ?? new UserModel();
 			if (auser.Id == null) { throw new Exception("Credenciais (Usuario, Senha), Invalidos!"); }
 			var token = GenToken.GeneretionToken(_mapper.Map<UserVO>(auser));
 			return new ResultLogin
@@ -68,5 +69,11 @@ namespace FTorrent.API.Repositorio
 				token = token.ToString(),
 			};
 		}
-	}
+
+        public async Task<IEnumerable<NameUserVO>> ListUsers()
+        {
+			List<UserModel> lista = await _db.Users.ToListAsync();
+			return _mapper.Map<IEnumerable<NameUserVO>>(lista);
+        }
+    }
 }

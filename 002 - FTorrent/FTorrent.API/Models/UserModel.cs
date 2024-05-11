@@ -8,6 +8,7 @@ namespace FTorrent.API.Models
 	{
 		[Key]
 		public int? Id { get; set; }
+		public string NameCompleto { get; set; }
 		public string Name { get; set; }
 		public string Password { get; set; }
 		public string role { get; set; } = "FUNCIONARIO";
@@ -15,10 +16,11 @@ namespace FTorrent.API.Models
 
 		public UserModel() { }
 
-		public UserModel(int? id, string name, string password, string role, DateTime? dataCadastro)
+		public UserModel(int? id, string name, string NameCompleto, string password, string role, DateTime? dataCadastro)
 		{
 			Id = id;
 			Name = name;
+			this.NameCompleto = NameCompleto;
 			Password = password;
 			this.role = role;
 			DataCadastro = dataCadastro;

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<FTorrent.WEB.ViewModel.NameUserVO>
+
+<form action="Enviar" method="post" enctype="multipart/form-data" style="background-color: #333; color: white; border-radius: 10px;">
+    <div style="height: 50vh;">
+        <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-3 col-form-label">Arquivo</label>
+            <div class="col-sm-8">
+                <input type="file" name="file" class="form-control rounded mb-3" style="background-color: #555; color: white;">
+            </div>
+        </div>
+        <div class="mb-4 row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Recebedor</label>
+            <div class="col-sm-8">
+                <select class="form-select"  name="recebedor">
+                    <option selected>*Selecione a pessoal que deseja enviar!*</option>
+                    @foreach(var user in Model)
+                    {
+                        <option value="1"> @user.Name </option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <input class="btn btn-primary rounded w-100" type="submit" value="Enviar">
+            </div>
+        </div>
+    </div>
+</form>

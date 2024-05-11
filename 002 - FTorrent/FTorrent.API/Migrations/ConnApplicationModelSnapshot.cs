@@ -30,6 +30,13 @@ namespace FTorrent.API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("id"));
 
+                    b.Property<string>("Identificador")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("date")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("diretory")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -70,6 +77,10 @@ namespace FTorrent.API.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NameCompleto")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

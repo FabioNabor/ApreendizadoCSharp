@@ -15,7 +15,7 @@ namespace FTorrent.API.Controllers
 		{
 			_user = user;
 		}
-		[Authorize(Roles = "GERENTE")]
+		[Authorize]
 		[HttpPost("Register")]
 		public async Task<ActionResult<UserVO>> Register(UserVO user)
 		{
@@ -27,6 +27,14 @@ namespace FTorrent.API.Controllers
 		{
 			var loginn = await _user.Login(loginUser);
 			return Ok(loginn);
+		}
+
+		[Authorize]
+		[HttpGet("Usuarios")]
+		public async Task<ActionResult<IEnumerable<NameUserVO>>> Usuarios()
+		{
+			var usuarios = await _user.ListUsers();
+			return Ok(usuarios);
 		}
 
 	}

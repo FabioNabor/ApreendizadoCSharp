@@ -16,3 +16,11 @@ function executarAcaoController(filename) {
     };
     xhr.send();
 }
+
+setTimeout(function () {
+    $(".alert").fadeOut("slow", function () {
+        $(this).alert('close');
+    })
+}, 5000);
+
+

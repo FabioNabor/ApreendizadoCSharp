@@ -1,48 +1,110 @@
 ﻿
 @{
 	ViewData["Title"] = "Central";
+    string FormatBytes(decimal bytes)
+    {
+        string[] suf = { "B", "KB", "MB", "GB", "TB", "PB", "EB" }; // Unidades
+        if (bytes == 0)
+        {
+            return "0 " + suf[0];
+        }
+        int lugar = Convert.ToInt32(Math.Floor(Math.Log(Convert.ToDouble(bytes), 1024)));
+        double tamanhoArredondado = Math.Round(Convert.ToDouble(bytes) / Math.Pow(1024, lugar), 2);
+        return tamanhoArredondado.ToString() + " " + suf[lugar];
+    }
 }
 
-@model IEnumerable<FileModel>;
+@model FTorrent.WEB.ViewModel.DadosUserVO;
 
 
 <div class="container">
-    <div class="d-flex justify-content-between align-items-center mb-5">
 
-        <h1> <i class="bi bi-box2-fill"></i> Gerenciador</h1>
+    <div style="margin:50px"></div>
+
+    <div class="d-flex justify-content-between align-items-center mb-1">
+        <h1>
+            <i class="bi bi-person-circle"></i>
+            Olá, @Model.name
+        </h1>
+
+        <a class="btn btn-danger" href="@Url.Action("Logout", "Gerenciador")"> <i class="bi bi-door-open-fill"></i></i> Sair </a>
+
     </div>
-    <a class="btn btn-warning table-hover" asp-controller="Emprestimo" asp-action="Cadastrar"> <i class="bi bi-file-earmark-diff"></i> Arquivos Enviados</a>
-    <a class="btn btn-success table-hover" asp-controller="Emprestimo" asp-action="Cadastrar"> <i class="bi bi-cloud-arrow-up-fill"></i> Enviar Arquivos</a>
+    
+
+    <div style="margin:80px"></div>
+
+    <div class="d-flex justify-content-between align-items-center mb-1">
+
+        <h2> <i class="bi bi-box2-fill"></i> Gerenciador</h2>
+    </div>
 
 
+    @if (TempData["ArquivoGrande"] != null)
+    {
+        <div  class="alert alert-danger text-black" role="alert">
+            @TempData["ArquivoGrande"]
+        </div>
+    }
+    @if (TempData["Sucesso"] != null)
+    {
+        <div class="alert alert-success text-black" role="alert">
+            @TempData["Sucesso"]
+        </div>
+    }
+
+    <div style="margin:10px"></div>
+
+    <div class="d-flex justify-content-between align-items-center mb-1">
+        <div>
+            <a class="btn btn-success table-hover" asp-controller="Gerenciador" asp-action="Enviar"> <i class="bi bi-cloud-arrow-up-fill"></i> Enviar Arquivos</a>
+            <a class="btn table-hover" style="background-color: indianred"> <i class="bi bi-file-earmark-diff"></i> Arquivos Enviados</a>
+            <a class="btn btn-warning table-hover"> <i class="bi bi-cloud-arrow-down-fill"></i> Arquivos Baixados</a>
+        </div>
+        <a class="btn btn-info table-hover"> <i class="bi bi-file-earmark-excel-fill"></i> Exportar Excel</a>
+        
+    </div>
+
+    <hr />
 
     <table id="Files" class="table table-light mt-5">
         <thead>
             <tr>
-                <th scope="col">Arquivo</th>
-                <th scope="col">Tamanho</th>
-                <th scope="col">Fornecedor</th>
-                <th scope="col">Data de Recebimento</th>
+                <th scope="col"> <i class="bi bi-file-earmark-minus-fill"></i> Arquivo</th>
+                <th scope="col"> <i class="bi bi-bounding-box"></i> Tamanho</th>
+                <th scope="col"> <i class="bi bi-truck"></i> Fornecedor</th>
+                <th scope="col"> <i class="bi bi-calendar-event-fill"></i> Data de Recebimento</th>
+                <th scope="col"> <i class="bi bi-exclamation-diamond-fill"></i> Risco</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
 
-            @if (Model != null)
+            @if (Model.name != null)
             {
-
-                @foreach (var file in Model)
+                
+                @foreach (var file in Model.files)
                 {
                     <tr>
-                        <th scope="row">@file.filename</th>
-                        <td>@file.size</td>
-                        <td>@file.fornecedor</td>
-                        <td>09/07/2024</td>
+                        <th scope="row"> @file.filename.ToUpper()</th>
+                        <td>@FormatBytes(file.size)</td>
+                        <td>@file.fornecedor.ToUpper()</td>
+                        <td>@file.date</td>
+                        @if (file.filename.Equals(".exe"))
+                        {
+                            <td>Alto</td>
+                        }
+                        else 
+                        {
+                            <td>Médio</td>
+                        }
                         <td>
-                            <a href="@Url.Action("DownloadFile", "Gerenciador", file.filename )" class="btn btn-success mx-2">
+                            <a href="@Url.Action("DownloadFile", "Gerenciador", new { file  = file.filename} )" class="btn btn-success mx-2">
                                 <i class="bi bi-download"></i> Download
                             </a>
-                            <a asp-controller="Emprestimo" asp-action="Excluir"  class="btn btn-danger mx-2"> <i class="bi bi-trash-fill"></i> Deletar</a>
+                            <a href="@Url.Action("DownloadFile", "Gerenciador", new { file  = file.filename} )" class="btn btn-danger mx-2">
+                                <i class="bi bi-file-x-fill"></i> Deletar
+                            </a>
                         </td>
                     </tr>
                 }
@@ -55,4 +117,7 @@
     </table>
 
 </div>
+
+
+
 

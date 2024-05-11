@@ -23,7 +23,7 @@ namespace FTorrent.API.Controllers
 		{
 			var	name = User.FindFirst("name")?.Value;
 			if (name.ToLower() == recebedor) { return NotFound("Você não pode enviar arquivos pra você mesmo!"); }
-			await _filerp.UpdateFile(file, name.ToLower(), recebedor);
+			await _filerp.UpdateFile(file, name, recebedor);
 			return Ok();
 		}
 
@@ -33,8 +33,8 @@ namespace FTorrent.API.Controllers
 			var name = User.FindFirst("name")?.Value;
 			var file = await _filerp.FindFile(filename);
 
-			//if (file.recebedor != name.ToLower())
-				//return BadRequest("Esse arquivo não foi enviado a você, ou não te pertence!"); 
+			if (file.recebedor != name.ToLower())
+				return BadRequest("Esse arquivo não foi enviado a você, ou não te pertence!"); 
 			
 
 			var diretory = Path.Combine(Directory.GetCurrentDirectory(), file.diretory);
@@ -50,7 +50,7 @@ namespace FTorrent.API.Controllers
 		public async Task<ActionResult<IEnumerable<FilesModel>>> MyFiles()
 		{
 			var name = User.FindFirst("name")?.Value;
-			var list = await _filerp.FindAllMyFiles(name.ToLower());
+			var list = await _filerp.FindAllMyFiles(name);
 			return Ok(list);
 		}
 	}

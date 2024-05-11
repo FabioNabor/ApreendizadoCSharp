@@ -12,7 +12,9 @@ namespace FTorrent.API.Config
 			{
 				config.CreateMap<UserModel, UserVO>();
 				config.CreateMap<UserVO, UserModel>();
-			});
+				config.CreateMap<UserModel, NameUserVO>();
+                config.CreateMap<NameUserVO, UserModel>();
+            });
 			return mappingConfig;
 		}
 	}

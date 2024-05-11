@@ -1,12 +1,13 @@
 ﻿using FTorrent.WEB.Models;
+using FTorrent.WEB.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FTorrent.WEB.Services
 {
     public interface IFileService
     {
-        Task<IEnumerable<FileModel>> ListarMyFiles(string token);
-        Task<IActionResult> Download(string name, string token);
+        Task<DadosUserVO> ListarMyFiles();
+        Task<IActionResult> SendFile(IFormFile file, string recebedor);
 
     }
 }

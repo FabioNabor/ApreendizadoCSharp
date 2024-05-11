@@ -7,5 +7,7 @@ namespace FTorrent.WEB.Services
 	public interface ILoginService
 	{
 		Task<ResultLogin> Login(LoginUser loginModel);
-	}
+		Task<IEnumerable<NameUserVO>> Usuarios();
+
+    }
 }

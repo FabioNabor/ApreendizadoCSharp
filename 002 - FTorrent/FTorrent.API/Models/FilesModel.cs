@@ -12,6 +12,8 @@ namespace FTorrent.API.Models
 		public string diretory { get; set; }
 		public string fornecedor { get; set; }
 		public string recebedor { get; set; }
+		public string Identificador { get; set; }
+		public DateTime date { get; set; } = DateTime.Now;
 
 
 		public FilesModel()
@@ -19,7 +21,7 @@ namespace FTorrent.API.Models
 
 		}
 
-		public FilesModel(int? id, string filename, decimal size, string filetype, string diretory, string fornecedor, string recebedor)
+		public FilesModel(int? id, string filename, decimal size, string filetype, string diretory, string fornecedor, string recebedor, string Identificador,DateTime? date)
 		{
 			this.id = id;
 			this.filename = filename;
@@ -28,6 +30,8 @@ namespace FTorrent.API.Models
 			this.diretory = diretory;
 			this.fornecedor = fornecedor;
 			this.recebedor = recebedor;
+			this.Identificador = Identificador;
+            this.date = DateTime.Now;
 		}
 	}
 }

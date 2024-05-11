@@ -25,6 +25,7 @@ namespace FTorrent.API.Service
 				audience: audience,
 				claims: new[]
 				{
+					new Claim("nomecompleto", user.NameCompleto),
 					new Claim("name", user.Name),
 					new Claim(ClaimTypes.Role, user.role)
 				},

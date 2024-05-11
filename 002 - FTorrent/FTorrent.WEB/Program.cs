@@ -8,6 +8,8 @@ namespace FTorrent.WEB
 		{
 			var builder = WebApplication.CreateBuilder(args);
 
+			builder.Services.AddHttpContextAccessor();
+
 			builder.Services.AddHttpClient<ILoginService, LoginService>( c => 
 					c.BaseAddress = new Uri(builder.Configuration["ServicesUrls:FTorretAPI"])
 			);
