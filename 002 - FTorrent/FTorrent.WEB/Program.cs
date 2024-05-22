@@ -1,4 +1,5 @@
 using FTorrent.WEB.Services;
+using FTorrent.WEB.Utils;
 
 namespace FTorrent.WEB
 {
@@ -9,6 +10,7 @@ namespace FTorrent.WEB
 			var builder = WebApplication.CreateBuilder(args);
 
 			builder.Services.AddHttpContextAccessor();
+
 
 			builder.Services.AddHttpClient<ILoginService, LoginService>( c => 
 					c.BaseAddress = new Uri(builder.Configuration["ServicesUrls:FTorretAPI"])

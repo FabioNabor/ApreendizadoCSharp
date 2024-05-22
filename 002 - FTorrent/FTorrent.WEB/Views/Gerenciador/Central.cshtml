@@ -53,6 +53,13 @@
         </div>
     }
 
+    @if (TempData["Nullo"] != null)
+    {
+        <div class="alert alert-danger text-black" role="alert">
+            @TempData["Nullo"]
+        </div>
+    }
+
     <div style="margin:10px"></div>
 
     <div class="d-flex justify-content-between align-items-center mb-1">

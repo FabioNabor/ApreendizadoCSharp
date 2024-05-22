@@ -43,12 +43,18 @@ namespace FTorrent.WEB.Controllers
             var response = await _httpClient.GetAsync($"https://localhost:7116/api/v1/Files/Arquivo?filename={file}");
 			var fileBytes = await response.Content.ReadAsStreamAsync();
 			var contentType = response.Content.Headers.ContentType?.MediaType;
+			TempData["Download"] = "Download Iniciado com sucesso!";
 			return File(fileBytes, contentType, file);
         }
 
         public async Task<IActionResult> Enviar()
 		{
-			var usuarios = await _loginService.Usuarios();
+            var token = HttpContext.Request.Cookies["jwt"];
+            if (token == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            var usuarios = await _loginService.Usuarios();
 			return View(usuarios);
 		}
 
@@ -57,6 +63,11 @@ namespace FTorrent.WEB.Controllers
 		{
 			try
 			{
+				if (file == null) 
+				{
+                    TempData["Nullo"] = "Arquivo não foi enviado! selecione algum arquivo!";
+                    return RedirectToAction("Central"); 
+				}
 				var response = _fileService.SendFile(file, recebedor);
                 TempData["Sucesso"] = "Arquivo enviado com sucesso!";
                 return RedirectToAction("Central");

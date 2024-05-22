@@ -15,7 +15,9 @@
                     <option selected>*Selecione a pessoal que deseja enviar!*</option>
                     @foreach(var user in Model)
                     {
-                        <option value="1"> @user.Name </option>
+                        int i = 1;
+                        <option value="@user.Name"> @user.Name </option>
+                        i++;
                     }
                 </select>
             </div>

@@ -3,37 +3,10 @@
   "WorkspaceRootPath": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59078B9A-1A4D-4BE1-ABC4-1FE80996DC2B}|..\\FTorrent.WEB\\FTorrent.WEB.csproj|f:\\c# apreendizado\\apreendizadocsharp\\002 - ftorrent\\ftorrent.web\\views\\gerenciador\\central.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59078B9A-1A4D-4BE1-ABC4-1FE80996DC2B}|..\\FTorrent.WEB\\FTorrent.WEB.csproj|f:\\c# apreendizado\\apreendizadocsharp\\002 - ftorrent\\ftorrent.web\\services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59078B9A-1A4D-4BE1-ABC4-1FE80996DC2B}|..\\FTorrent.WEB\\FTorrent.WEB.csproj|f:\\c# apreendizado\\apreendizadocsharp\\002 - ftorrent\\ftorrent.web\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59078B9A-1A4D-4BE1-ABC4-1FE80996DC2B}|..\\FTorrent.WEB\\FTorrent.WEB.csproj|f:\\c# apreendizado\\apreendizadocsharp\\002 - ftorrent\\ftorrent.web\\controllers\\gerenciadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59078B9A-1A4D-4BE1-ABC4-1FE80996DC2B}|..\\FTorrent.WEB\\FTorrent.WEB.csproj|f:\\c# apreendizado\\apreendizadocsharp\\002 - ftorrent\\ftorrent.web\\services\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E9E9C0-C4CF-4B10-AA9B-56F59D3D985E}|FTorrent.API.csproj|F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.API\\repositorio\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45E9E9C0-C4CF-4B10-AA9B-56F59D3D985E}|FTorrent.API.csproj|solutionrelative:repositorio\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59078B9A-1A4D-4BE1-ABC4-1FE80996DC2B}|..\\FTorrent.WEB\\FTorrent.WEB.csproj|f:\\c# apreendizado\\apreendizadocsharp\\002 - ftorrent\\ftorrent.web\\viewmodel\\dadosuservo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E9E9C0-C4CF-4B10-AA9B-56F59D3D985E}|FTorrent.API.csproj|F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.API\\controllers\\filecontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45E9E9C0-C4CF-4B10-AA9B-56F59D3D985E}|FTorrent.API.csproj|solutionrelative:controllers\\filecontoller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E9E9C0-C4CF-4B10-AA9B-56F59D3D985E}|FTorrent.API.csproj|F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.API\\repositorio\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45E9E9C0-C4CF-4B10-AA9B-56F59D3D985E}|FTorrent.API.csproj|solutionrelative:repositorio\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59078B9A-1A4D-4BE1-ABC4-1FE80996DC2B}|..\\FTorrent.WEB\\FTorrent.WEB.csproj|f:\\c# apreendizado\\apreendizadocsharp\\002 - ftorrent\\ftorrent.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59078B9A-1A4D-4BE1-ABC4-1FE80996DC2B}|..\\FTorrent.WEB\\FTorrent.WEB.csproj|f:\\c# apreendizado\\apreendizadocsharp\\002 - ftorrent\\ftorrent.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59078B9A-1A4D-4BE1-ABC4-1FE80996DC2B}|..\\FTorrent.WEB\\FTorrent.WEB.csproj|f:\\c# apreendizado\\apreendizadocsharp\\002 - ftorrent\\ftorrent.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -46,145 +19,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginService.cs",
-              "DocumentMoniker": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Services\\LoginService.cs",
-              "RelativeDocumentMoniker": "..\\FTorrent.WEB\\Services\\LoginService.cs",
-              "ToolTip": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Services\\LoginService.cs",
-              "RelativeToolTip": "..\\FTorrent.WEB\\Services\\LoginService.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAABQAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T14:22:07.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.API\\Repositorio\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repositorio\\UserRepository.cs",
-              "ToolTip": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.API\\Repositorio\\UserRepository.cs",
-              "RelativeToolTip": "Repositorio\\UserRepository.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAEoAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T14:11:09.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "GerenciadorController.cs",
               "DocumentMoniker": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Controllers\\GerenciadorController.cs",
               "RelativeDocumentMoniker": "..\\FTorrent.WEB\\Controllers\\GerenciadorController.cs",
               "ToolTip": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Controllers\\GerenciadorController.cs",
               "RelativeToolTip": "..\\FTorrent.WEB\\Controllers\\GerenciadorController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAUwDIAAAAYAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACMAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T14:27:52.114Z",
+              "WhenOpened": "2024-05-13T00:43:54.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ILoginService.cs",
-              "DocumentMoniker": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Services\\ILoginService.cs",
-              "RelativeDocumentMoniker": "..\\FTorrent.WEB\\Services\\ILoginService.cs",
-              "ToolTip": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Services\\ILoginService.cs",
-              "RelativeToolTip": "..\\FTorrent.WEB\\Services\\ILoginService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T14:28:35.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DadosUserVO.cs",
-              "DocumentMoniker": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\ViewModel\\DadosUserVO.cs",
-              "RelativeDocumentMoniker": "..\\FTorrent.WEB\\ViewModel\\DadosUserVO.cs",
-              "ToolTip": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\ViewModel\\DadosUserVO.cs",
-              "RelativeToolTip": "..\\FTorrent.WEB\\ViewModel\\DadosUserVO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T14:36:26.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Central.cshtml",
-              "DocumentMoniker": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Views\\Gerenciador\\Central.cshtml",
-              "RelativeDocumentMoniker": "..\\FTorrent.WEB\\Views\\Gerenciador\\Central.cshtml",
-              "ToolTip": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Views\\Gerenciador\\Central.cshtml",
-              "RelativeToolTip": "..\\FTorrent.WEB\\Views\\Gerenciador\\Central.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAADwAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-11T11:10:41.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FileContoller.cs",
-              "DocumentMoniker": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.API\\Controllers\\FileContoller.cs",
-              "RelativeDocumentMoniker": "Controllers\\FileContoller.cs",
-              "ToolTip": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.API\\Controllers\\FileContoller.cs",
-              "RelativeToolTip": "Controllers\\FileContoller.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T14:19:40.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IUser.cs",
-              "DocumentMoniker": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.API\\Repositorio\\IUser.cs",
-              "RelativeDocumentMoniker": "Repositorio\\IUser.cs",
-              "ToolTip": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.API\\Repositorio\\IUser.cs",
-              "RelativeToolTip": "Repositorio\\IUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T14:11:15.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "site.css",
-              "DocumentMoniker": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "..\\FTorrent.WEB\\wwwroot\\css\\site.css",
-              "ToolTip": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "..\\FTorrent.WEB\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAcwCYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-11T14:05:57.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "..\\FTorrent.WEB\\Views\\Home\\Index.cshtml",
-              "ToolTip": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "..\\FTorrent.WEB\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-11T13:58:50.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Program.cs",
               "RelativeDocumentMoniker": "..\\FTorrent.WEB\\Program.cs",
               "ToolTip": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Program.cs",
               "RelativeToolTip": "..\\FTorrent.WEB\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T12:51:32.193Z"
+              "WhenOpened": "2024-05-13T00:42:00.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Services\\FileService.cs",
+              "RelativeDocumentMoniker": "..\\FTorrent.WEB\\Services\\FileService.cs",
+              "ToolTip": "F:\\C# Apreendizado\\ApreendizadoCSharp\\002 - FTorrent\\FTorrent.WEB\\Services\\FileService.cs",
+              "RelativeToolTip": "..\\FTorrent.WEB\\Services\\FileService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T00:29:45.854Z",
+              "EditorCaption": ""
             }
           ]
         }

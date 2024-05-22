@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorksTheDaily.API", "WorksTheDaily.API.csproj", "{59CFB968-36CE-4E5E-96DA-39D8655E431D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorksThedaily.WEB", "..\WorksThedaily.WEB\WorksThedaily.WEB.csproj", "{E59DE016-A4CD-44AD-8EE9-A1BE057422DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59CFB968-36CE-4E5E-96DA-39D8655E431D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59CFB968-36CE-4E5E-96DA-39D8655E431D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59CFB968-36CE-4E5E-96DA-39D8655E431D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59CFB968-36CE-4E5E-96DA-39D8655E431D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E59DE016-A4CD-44AD-8EE9-A1BE057422DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E59DE016-A4CD-44AD-8EE9-A1BE057422DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E59DE016-A4CD-44AD-8EE9-A1BE057422DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E59DE016-A4CD-44AD-8EE9-A1BE057422DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66342DCF-D4E9-4F2C-A447-ECDD67942C43}
+	EndGlobalSection
+EndGlobal
