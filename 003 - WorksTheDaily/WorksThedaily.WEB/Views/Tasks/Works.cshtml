@@ -3,56 +3,67 @@
 }
 @model IEnumerable<WorksTheDaily.API.View.TaskPO>
 
-
-
-<div class="container">
-    <div class="row">
-        @foreach (var item in Model)
-        {
-            <div class="col-md-3">
-                <div class="card bloco">
-                    <div class="card-body">
-                        @if (Enum.GetName(typeof(WorksTheDaily.API.Enums.EStatus), item.status) == "Novo")
-                        {
-                            <div style="background-color: green; width:245px; height: 10px"></div>
-                            <div style="margin: 10px"></div>
-                        }else
-                        {
-                            <div style="background-color: darkgoldenrod; width:245px; height: 10px"></div>
-                            <div style="margin: 10px"></div>
-                        }
-                        <div style="background-color: beige; width:245px; height: 50px">
-                            <h5 class="card-title">
-                                @item.TaskName
-                            </h5>
-                        </div>
-                        <h7 class="card-title">Nivel: @item.NivelPrioridade</h7>
-                        <div style="height: 80px">
-                            <p class="card-text">@item.Description</p>
-                        </div>
-
-                        <h5>Status: @item.status</h5>
-
-                        
-                        <div class="mb-5">
-
-                            <a href="#" class="btn btn-primary">
-                                <i class="bi bi-pen"></i>
-                            </a>
-
-                            <a href="#" class="btn btn-success">
-                                <i class="bi bi-check-square-fill"></i>
-                            </a>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        }
-    </div>
+<div>
+    <div class="controlegg"></div>
 </div>
 
+<div class="containerNovo">
 
+
+
+
+
+
+    <div class="row">
+        <div style="margin-top: 260px"></div>
+
+        @foreach(var task in Model)
+        {
+
+            <div class="card bloco">
+                <div class="faixa"></div>
+
+                <div class="head-text">
+                    <h1 class="TaskName"> @task.TaskName </h1>
+                </div>
+
+                <h4 class="Description"> @task.Description </h4>
+                <h3 class="Nivel"> Nivel: @task.NivelPrioridade </h3>
+
+                @if (task.status.ToString().ToUpper() == "NOVO")
+                {
+                    <div class="Status" style="background-color: #00BFFF	">
+                        <h3 style="font-size: 20px"> @task.status.ToString().ToUpper() </h3>
+                    </div>
+                }
+                else if (task.status.ToString().ToUpper() == "ANALISE")
+                {
+                    <div class="Status" style="background-color: #DAA520">
+                        <h3 style="font-size: 20px"> @task.status.ToString().ToUpper() </h3>
+                    </div>
+                }
+                
+                
+
+
+                <div class="botoes">
+
+                    <a href="#" class="btn btn-primary">
+                        <i class="bi bi-pen"></i>
+                    </a>
+
+                    <a href="#" class="btn btn-success">
+                        <i class="bi bi-check-square-fill"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        }
+
+        
+
+
+    </div>
+</div>
 
